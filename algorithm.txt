@@ -43,5 +43,5 @@ step 7: Check if user's price is less than 50% of suggested price
 step 8: Enter bidding option
         where the user can input a new price and this price checked
         amongst the range of prices.
-step 9: Display accepted price
+step 9: Display the accepted price
 step 10: Stop
