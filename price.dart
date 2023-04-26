@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 void main() {
@@ -46,22 +45,22 @@ void main() {
       print("Enter your price");
       String price = stdin.readLineSync()!;
       int userPrice = int.parse(price);
-      int expectedPrice = trashCategory[0]['catPrice'] * quantity;
-      if (userPrice < (expectedPrice ~/ 2)) {
-        print("The price you entered is low, we recommend you pay $expectedPrice");
+      int suggestedPrice = trashCategory[0]['catPrice'] * quantity;
+      if (userPrice < (suggestedPrice ~/ 2)) {
+        print("The price you entered is low, we recommend you pay $suggestedPrice");
         String choice = getUserInput("Do you accept to pay the recommended price? *y/n");
         switch(choice) {
           case "y": {
-            userPrice = expectedPrice;
-            print("You have agreed to pay $expectedPrice, thank you");
+            userPrice = suggestedPrice;
+            print("You have agreed to pay $suggestedPrice, thank you");
           };
           break;
           case "n": {
-            print("You have declined to pay $expectedPrice, entering bidding mode...");
+            print("You have declined to pay $suggestedPrice, entering bidding mode...");
             int newPrice = int.parse(getUserInput("Enter your new price"));
-            int price70 = (expectedPrice * 0.7).toInt();
-            int price75 = (expectedPrice * 0.75).toInt();
-            int price80 = (expectedPrice * 0.8).toInt();
+            int price70 = (suggestedPrice * 0.7).toInt();
+            int price75 = (suggestedPrice * 0.75).toInt();
+            int price80 = (suggestedPrice * 0.8).toInt();
 
             if (newPrice >= price70) {
               print("Acceptable, sending bid to agent for confirmation");
@@ -89,22 +88,22 @@ void main() {
       print("Enter your price");
       String price = stdin.readLineSync()!;
       int userPrice = int.parse(price);
-      int expectedPrice = trashCategory[0]['catPrice'] * quantity;
-      if (userPrice < (expectedPrice ~/ 2)) {
-        print("The price you entered is low, we recommend you pay $expectedPrice");
+      int suggestedPrice = trashCategory[0]['catPrice'] * quantity;
+      if (userPrice < (suggestedPrice ~/ 2)) {
+        print("The price you entered is low, we recommend you pay $suggestedPrice");
         String choice = getUserInput("Do you accept to pay the recommended price? *y/n");
         switch(choice) {
           case "y": {
-            userPrice = expectedPrice;
-            print("You have agreed to pay $expectedPrice, thank you");
+            userPrice = suggestedPrice;
+            print("You have agreed to pay $suggestedPrice, thank you");
           };
           break;
           case "n": {
-            print("You have declined to pay $expectedPrice, entering bidding mode...");
+            print("You have declined to pay $suggestedPrice, entering bidding mode...");
             int newPrice = int.parse(getUserInput("Enter your new price"));
-            int price70 = (expectedPrice * 0.7).toInt();
-            int price75 = (expectedPrice * 0.75).toInt();
-            int price80 = (expectedPrice * 0.8).toInt();
+            int price70 = (suggestedPrice * 0.7).toInt();
+            int price75 = (suggestedPrice * 0.75).toInt();
+            int price80 = (suggestedPrice * 0.8).toInt();
 
             if (newPrice >= price70) {
               print("Acceptable, sending bid to agent for confirmation");
@@ -132,22 +131,22 @@ void main() {
       print("Enter your price");
       String price = stdin.readLineSync()!;
       int userPrice = int.parse(price);
-      int expectedPrice = trashCategory[0]['catPrice'] * quantity;
-      if (userPrice < (expectedPrice ~/ 2)) {
-        print("The price you entered is low, we recommend you pay $expectedPrice");
+      int suggestedPrice = trashCategory[0]['catPrice'] * quantity;
+      if (userPrice < (suggestedPrice ~/ 2)) {
+        print("The price you entered is low, we recommend you pay $suggestedPrice");
         String choice = getUserInput("Do you accept to pay the recommended price? *y/n");
         switch(choice) {
           case "y": {
-            userPrice = expectedPrice;
-            print("You have agreed to pay $expectedPrice, thank you");
+            userPrice = suggestedPrice;
+            print("You have agreed to pay $suggestedPrice, thank you");
           };
           break;
           case "n": {
-            print("You have declined to pay $expectedPrice, entering bidding mode...");
+            print("You have declined to pay $suggestedPrice, entering bidding mode...");
             int newPrice = int.parse(getUserInput("Enter your new price"));
-            int price70 = (expectedPrice * 0.7).toInt();
-            int price75 = (expectedPrice * 0.75).toInt();
-            int price80 = (expectedPrice * 0.8).toInt();
+            int price70 = (suggestedPrice * 0.7).toInt();
+            int price75 = (suggestedPrice * 0.75).toInt();
+            int price80 = (suggestedPrice * 0.8).toInt();
 
             if (newPrice >= price70) {
               print("Acceptable, sending bid to agent for confirmation");

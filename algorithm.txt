@@ -1,0 +1,47 @@
+step 1: Start
+step 2: Mapping each category to their name, volume and quantity
+        Creating a list to hold these categories
+        Declaring the threshold volume
+         int thresholdVol = 1500;
+
+         Map Bucket = {
+         'catName': "Bucket",
+         'catVol': 30,
+         'catPrice': 250
+        };
+
+        Map trashBag = {
+        'catName': "Trashbag",
+        'catVol': 35,
+        'catPrice': 300
+       }; 
+
+       Map wheelBarrow = {
+       'catName': "Wheelbarrow",
+       'catVol': 40,
+       'catPrice': 500
+      };
+
+      List trashCategory = [
+      Bucket,
+      trashBag,
+      wheelBarrow,
+     ]; 
+
+step 3: Input trash category
+step 4: Input trash quantity
+step 5: Check if user's trash volume greater than threshold Volume
+        if (trashVolume > thresholdVol) {
+        print("Owner might be a business.");
+        return;
+      }
+
+step 6: Input your price
+step 7: Check if user's price is less than 50% of suggested price
+       If no, accept user price
+       But if yes then go to bidding option
+step 8: Enter bidding option
+        where the user can input a new price and this price checked
+        amongst the range of prices.
+step 9: Display accepted price
+step 10: Stop
